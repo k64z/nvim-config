@@ -88,3 +88,12 @@ vim.api.nvim_create_autocmd('FileType', {
     vim.opt_local.colorcolumn = '120'
   end,
 })
+
+-- Systemd service files
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  group = 'FileTypeDefaults',
+  pattern = { '*.service', '*.socket', '*.timer', '*.target', '*.mount', '*.automount', '*.swap', '*.path' },
+  callback = function()
+    vim.bo.filetype = 'systemd'
+  end,
+})
