@@ -1,11 +1,15 @@
 return {
 	cmd = {
-		"node",
-		"./node_modules/@angular/language-service/index.js",
-		"--stdio"
+		"ngserver",
+		"--stdio",
+		"--tsProbeLocations",
+		".",
+		"--ngProbeLocations",
+		"."
 	},
 	filetypes = {
-		"typescript", "html"
+		"typescript",
+		"html"
 	},
 	root_markers = {
 		"angular.json"
