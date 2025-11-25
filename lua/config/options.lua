@@ -23,12 +23,10 @@ vim.opt.scrolloff = 10
 vim.opt.winborder = "solid" -- https://neovim.io/doc/user/options.html#'winborder'
 
 
--- Basic indentation settings
+-- Indentation settings (using treesitter for smart indentation)
 vim.opt.tabstop = 4        -- Number of spaces a tab displays as
 vim.opt.shiftwidth = 4     -- Spaces for indentation
+vim.opt.softtabstop = 4    -- Spaces inserted when pressing Tab
 vim.opt.expandtab = true   -- Convert tabs to spaces
 vim.opt.autoindent = true  -- Copy indent from current line
-vim.opt.smartindent = true -- Smart autoindenting
-
--- Optional
-vim.opt.softtabstop = 4 -- Spaces inserted when pressing Tab
+vim.opt.smartindent = true -- Smart autoindenting for languages without treesitter indent
