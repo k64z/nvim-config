@@ -3,6 +3,7 @@ vim.lsp.enable({
     "lua_ls",
     "ts_ls",
     "angularls",
+    "html",
 })
 
 vim.diagnostic.config({
