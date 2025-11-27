@@ -5,6 +5,7 @@ return {
 	settings = {                                             -- Settings for the language server
 		gopls = {
 			gofumpt = true,
+			["build.buildFlags"] = { "-tags=integration" },
 			codelenses = {
 				gc_details = false,
 				generate = true,
