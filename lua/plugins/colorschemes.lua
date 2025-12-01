@@ -3,6 +3,6 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-        vim.cmd.colorscheme('kanagawa-dragon') -- wave, dragon, lotus
+        vim.cmd.colorscheme('kanagawa-wave') -- wave, dragon, lotus
     end
 }

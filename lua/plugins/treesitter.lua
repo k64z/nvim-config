@@ -22,6 +22,7 @@ return {
                 "c",
                 "html",
                 "javascript",
+                "typescript",
                 "json",
                 "lua",
                 "luadoc",
